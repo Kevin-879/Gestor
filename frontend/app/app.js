@@ -172,10 +172,10 @@ async function insertarDocumento(event) {
         
         if (!response.ok) throw new Error('Error en la solicitud');
         const responseData = await response.json();
-        document.getElementById('resultadoInsercion').textContent = `Documento insertado correctamente. ID: ${responseData.Documento}`;
+        document.getElementById('resultadoInsercion').textContent = `Estudiante Guardado Correctamente.`;
         cargarTodosLosDocumentos();
     } catch (error) {
-        document.getElementById('resultadoInsercion').textContent = 'Error al insertar el documento.';
+        document.getElementById('resultadoInsercion').textContent = 'Error al guardar.';
     }
 }
 
